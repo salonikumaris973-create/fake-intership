@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerifyIntern - Fake Internship Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <div class="header-container">
+            <div class="logo">🛡️ VerifyIntern</div>
+            <nav class="nav-links">
+                <a href="#detector">Detector</a>
+                <a href="https://www.scamwatch.gov.au/" target="_blank">Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="app-body" id="detector">
+        <div class="card">
+            <h1>Internship Scam Analyzer</h1>
+            <p class="subtitle">Protect your career. Paste the job description, email, or offer details below to scan for common red flags.</p>
+            
+            <div class="form-group">
+                <label for="jobDescription">Job Description / Offer Text:</label>
+                <textarea id="jobDescription" placeholder="e.g., 'We found your resume online. We pay $50/hr. Interview via Telegram. Must pay $100 for training laptop...'"></textarea>
+            </div>
+            
+            <button id="analyzeBtn">Analyze Posting</button>
+            
+            <div id="resultBox" class="result-box"></div>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 VerifyIntern. Built for student safety.</p>
+            <p class="footer-disclaimer">Disclaimer: This tool uses basic keyword matching. Always conduct thorough background checks on companies before sharing personal information.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
